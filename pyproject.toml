@@ -4,12 +4,18 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "contained"
-version = "0.0.1"
+version = "0.0.2"
 authors = [{name = "Jeremiah Paige", email = "ucodery@gmail.com"}]
 readme = "README.md"
 license = {file = "LICENSE"}
+requires-python = ">=3.8"
 classifiers = ["License :: OSI Approved :: MIT License"]
+keywords = ["functional", "composition", "pipline", "chaining"]
 dynamic = ["description"]
 
 [project.urls]
 Home = "https://github.com/ucodery/contained"
+
+[project.optional-dependencies]
+dev = ["flit", "nox"]
+test = ["pytest >= 2.7.3", "mktestdocs >= 0.2.0"]
